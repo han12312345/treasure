@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻找宝藏之旅</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <h1>寻找宝藏之旅</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <button id="start-btn">开始寻宝</button>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // 确保在 DOM 完全加载后添加事件监听器
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('start-btn').addEventListener('click', startGame);
+        });
+    </script>
+</body>
+
+</html>
